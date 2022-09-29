@@ -1,0 +1,196 @@
+main {
+  background-image: url(../../../assets/icons/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-top: 100px;
+
+  @media only screen and (max-width: 1050px) {
+    background-position: center 600px;
+    background-size: 90%;
+    height: 1200px;
+    padding-top: 40px;
+  }
+
+  .section {
+    margin: 0 32px;
+    max-width: 592px;
+
+    .chevron {
+      all: inherit;
+      border: none;
+      border-radius: 0;
+      font-size: inherit;
+      background-color: inherit;
+      padding: 0;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+
+    &.pitch {
+      max-width: 520px;
+      @media only screen and (max-width: 1360px) {
+        max-width: 490px;
+      }
+      @media only screen and (max-width: 500px) {
+        max-width: 370px;
+      }
+    }
+
+    h1 {
+      letter-spacing: -0.025em;
+      font-weight: 800;
+      font-size: 72px;
+      line-height: 72px;
+      @media only screen and (max-width: 1360px) {
+        font-size: 60px;
+        line-height: 60px;
+      }
+      @media only screen and (max-width: 500px) {
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      @media only screen and (max-width: 1080px) {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      @media only screen and (max-width: 834px) {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      @media only screen and (max-width: 500px) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &.start {
+      margin-top: 48px;
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .callout {
+    display: flex;
+    background: #000000;
+    border-radius: 14px;
+    height: 32px;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 4px 8px;
+    white-space: nowrap;
+    .badge {
+      background: #6366F1;
+      border-radius: 10px;
+      font-size: 12px;
+      text-transform: uppercase;
+      height: 24px;
+      padding: 2px 12px;
+    }
+    a {
+      color: inherit;
+    }
+  }
+  
+  .highlight {
+    color: #818CF8;
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  
+  .inline-form {
+    display: flex;
+    gap: 12px;
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+  
+    input:not([type=submit]) {
+      flex-grow: 1;
+    }
+  }
+
+  input[type=submit] {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #FFFFFF;
+    background: #6366F1;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  
+    &:focus {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 2px #111827, 0px 0px 0px 4px #A5B4FC;
+    }
+  
+    &:hover {
+      background: #4F46E5;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    }
+  
+    &.btn-nav {
+      background: #4B5563;
+  
+      &:focus {
+        background: #4B5563;
+      }
+  
+      &:hover {
+        background: #374151;
+      }
+    }
+  }
+  input[type=submit]:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 2px #111827, 0px 0px 0px 4px #A5B4FC;
+  }
+
+}
